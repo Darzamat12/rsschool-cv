@@ -1,0 +1,33 @@
+
+.header{
+    text-align:center;
+    font-family:Impact cursive;
+    color: #3CA1D9;
+    margin: 30px 100px;
+    background: #FFF4ED;
+    border: rgb(164, 221, 31) dotted;
+    padding: 10px;
+
+}
+body{
+    background-color:#F7E2C7;
+}
+ol{
+    font-size:large;
+    margin-right:200px;
+
+}
+
+details{
+    text-align:left;
+    white-space:pre;
+}
+img{
+    position:fixed;
+    right:0;
+    top:40px;
+
+    width:200px;
+    height:100px;
+
+}
