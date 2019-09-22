@@ -1,1 +1,1 @@
-# rsschool-cv
+https://darzamat12.github.io/rsschool-cv/
