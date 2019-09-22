@@ -1,0 +1,116 @@
+<!doctype HTML>
+<html lang="en">
+    <head>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        <title>My Resume</title>
+    </head>
+    <body class="body">
+        <header class="header">
+            <h1>My Resume</h1>
+        </header>
+        <main>
+                <img src="photo1.jpg">
+            <ol>
+                <li>Alexey Lapitsky</li>
+                <li>G-mail: heavylesha@gmail.com; Telegram: <a href="https://t.me/Darzamate">Darzamate</a>; vk:<a href="https://vk.com/id152283781">Alexey</a>; phone number: +375445624540;</li>
+                <li>At the current momenty my goal actually is to find some kind of activity that will be interesting for me and will be work that i like to do. For now i think that programming can be this activity, that's why i'm writing this resume. So about me: i'm kind of responsible person, one of the ability that i like most is my ability to learn fast, i really can digest information from one lesson and i need little experience to work with any information. I can quickly find a common language with different people.</li>
+                <li>I'm learning C++ in the university for more than 1 year, that's why i know the main things about it. I know a lot of basic thing such as: sorting and searching alghoritms, recursive functions, the main things in object-oriented programming and some other interesting things. Also before this course i have learned html/css and a bit of javascript.</li>
+                <li>This one of my last OOP laboratory work in the university  <details>
+                        #include "pch.h"
+                        #include <iostream>
+                        using namespace std;
+                        
+                        class Array{
+                            float *arr;
+                            int size;
+                        public:
+                            void init(int);
+                            void delArray();
+                            void set(int);
+                            float get(int);
+                            void print();
+                            Array() {
+                                arr = new float[5];
+                                arr[0] = 1;
+                                arr[1] = 2;
+                                arr[2] = 3;
+                                arr[3] = 4;
+                                arr[4] = 5;
+                            }
+                            Array(float *);
+                            Array(const Array&);
+                        
+                            ~Array() { delete arr; };
+                        };
+                        
+                        Array::Array(float *s) {
+                            arr = s;
+                        }
+                        
+                        Array::Array(const Array &t) {
+                            arr = new float[t.size];
+                            for (int i = 0; i < t.size; i++) {
+                                arr[i] = t.arr[i];
+                            }
+                        }
+                        
+                        
+                        
+                        void Array::init(int size1) {
+                            float *s = new float[size1];
+                            arr = s;
+                            size = size1;
+                            for (int i = 0; i < size; i++) {
+                                cin >> arr[i];
+                            }
+                         }
+                        
+                        void Array::delArray() {
+                            delete(arr);
+                        }
+                        
+                        void Array::set(int i) {
+                            float tmp;
+                            cin >> tmp;
+                            arr[i] = tmp;
+                        }
+                        
+                        float Array::get(int i) {
+                            cout << arr[i] << endl;
+                            return arr[i];
+                        }
+                        
+                        void Array::print() {
+                            for (int i = 0; i < size; i++)
+                                cout << arr[i]<<"\t";
+                        }
+                        
+                        
+                        int main()
+                        {
+                            Array myArray;
+                            int size;
+                            cin >> size;
+                            myArray.init(size);
+                            int tmp;
+                            cin >> tmp;
+                            myArray.set(tmp);
+                            cin >> tmp;
+                            myArray.set(tmp);
+                            cin >> tmp;
+                            myArray.get(tmp);
+                            myArray.print();
+                            myArray.delArray();
+                        
+                            return 0;
+                        }
+                        
+                </details></li>
+                <li>I have passed course <a href="https://www.codecademy.com/learn">here</a> and started a course <a href="https://www.freecodecamp.org/">here</a>.</li>
+                <li>I'm studying at the Belorusian State University of Informatics and Radioelectronics on th Faculty of Informational Technology and Control. I have passed some course that i mantioned above.</li>
+                <li>I learned English language since i was 6. While learning at i was attending additional English courses for about 7 years. That's why i know English pretty good. For now my English knowledge level is about B2. Also i've been abroad many times and there i spoke fluently with native speakers.</li>
+            </ol>
+        </main>
+         
+    </body>
+</html>
